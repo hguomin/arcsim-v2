@@ -10,7 +10,8 @@ ifdef NO_OPENGL
 endif
 CXXFLAGS_DEBUG := -Wall -g -Wno-sign-compare
 CXXFLAGS_RELEASE := -O3 -Wreturn-type -fopenmp
-LDFLAGS := -Ldependencies/lib -L/opt/local/lib -lpng -lz -ltaucs -llapack -lblas -lboost_filesystem-mt -lboost_system-mt -lboost_thread-mt -ljson -lgomp -lalglib
+# LDFLAGS := -Ldependencies/lib -L/opt/local/lib -lpng -lz -ltaucs -llapack -lblas -lboost_filesystem-mt -lboost_system-mt -lboost_thread-mt -ljson -lgomp -lalglib
+LDFLAGS := -Ldependencies/lib -L/opt/local/lib -lpng -lz -ltaucs -llapack -lblas -lboost_filesystem -lboost_system -lboost_thread -ljson -lgomp -lalglib
 ifndef NO_OPENGL
 	LDFLAGS := $(LDFLAGS) -lglut -lGLU -lGL
 endif

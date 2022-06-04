@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+bin
+.vscode
+src/TAGS
+src/tags
+dependencies/jsoncpp/scons-tools/__pycache__
+dependencies/jsoncpp/src/jsontestrunner/jsontestrunner
+dependencies/jsoncpp/src/lib_json/*.os
+dependencies/jsoncpp/src/test_lib_json/test_lib_json
+dependencies/include
